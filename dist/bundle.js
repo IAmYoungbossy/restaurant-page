@@ -116,7 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\nconst body = document.querySelector('body');\nconst content = document.querySelector('#content');\nconst header = document.createElement('hi');\n\nheader.textContent = \"Welcome To Our Restaurant\";\n\ncontent.appendChild(header);\nbody.appendChild(content);\n\nbody.classList.add('hello');\nconsole.log('Hello Bossman');\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\nconst body = document.querySelector('body');\nconst content = document.querySelector('#content');\nconst header = document.createElement('hi');\n\nheader.textContent = \"Welcome To Our Restaurant\";\n\nbody.appendChild(header);\nbody.appendChild(content);\n\nbody.classList.add('hello');\nconsole.log('Hello Bossman');\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ })
 

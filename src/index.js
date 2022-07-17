@@ -6,7 +6,7 @@ const header = document.createElement('hi');
 
 header.textContent = "Welcome To Our Restaurant";
 
-content.appendChild(header);
+body.appendChild(header);
 body.appendChild(content);
 
 body.classList.add('hello');
