@@ -10,6 +10,7 @@ const menuHome = document.createElement('li');
 const menuMenu = document.createElement('li');
 const menuContact = document.createElement('li');
 
+
 content.appendChild(header);
 header.appendChild(logoContainer);
 header.appendChild(menuContainer);
@@ -23,3 +24,13 @@ logo.textContent = 'The Burger Palace';
 menuHome.textContent = 'Home';
 menuMenu.textContent = 'Menu';
 menuContact.textContent = 'Contact';
+
+const buttonContainer = document.createElement('div');
+const orderButton = document.createElement('button');
+const contactUsButton = document.createElement('button');
+content.appendChild(buttonContainer);
+buttonContainer.appendChild(orderButton);
+buttonContainer.appendChild(contactUsButton);
+
+orderButton.textContent = 'Order Food';
+contactUsButton.textContent = 'Contact Us!';
