@@ -39,25 +39,9 @@ li {
 li:hover {
   color: #5c80a3;
 }
-.menu-items {
-  height: 200px;
-  padding: 20px;
-  border-radius: 20px;
-  text-align: center;
-  border: 5px solid #e20e00;
-  color: white;
-  box-shadow: 5px 2px 8px black;
-}
-.menu-name {
-  text-decoration: underline;
-}
 #content {
   width: min(75vw, 1000px);
   padding: 30px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 20px;
-  margin: 50px auto;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
 }

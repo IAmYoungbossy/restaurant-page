@@ -1,3 +1,5 @@
+import "./style.css";
+
 function home() {
   const createDomElements = (function () {
     const content = document.querySelector("#content");
