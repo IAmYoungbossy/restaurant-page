@@ -9,9 +9,10 @@ const menu = document.createElement('ul');
 const menuHome = document.createElement('li');
 const menuMenu = document.createElement('li');
 const menuContact = document.createElement('li');
+const footer = document.createElement('footer');
+const body = content.parentNode;
 
-
-content.appendChild(header);
+body.insertBefore(header, content);
 header.appendChild(logoContainer);
 header.appendChild(menuContainer);
 logoContainer.appendChild(logo);
@@ -26,8 +27,8 @@ menuMenu.textContent = 'Menu';
 menuContact.textContent = 'Contact';
 
 const buttonContainer = document.createElement('div');
-const orderButton = document.createElement('button');
-const contactUsButton = document.createElement('button');
+const orderButton = document.createElement('div');
+const contactUsButton = document.createElement('div');
 content.appendChild(buttonContainer);
 buttonContainer.appendChild(orderButton);
 buttonContainer.appendChild(contactUsButton);
