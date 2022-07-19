@@ -37,6 +37,7 @@ header > div:first-child {
 ul {
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
 }
 li {
   list-style: none;
