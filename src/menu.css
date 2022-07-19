@@ -46,6 +46,10 @@ li:hover {
   text-align: center;
   border: 5px solid #e20e00;
   color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+.menu-name {
+  text-decoration: underline;
 }
 #content {
   width: min(75vw, 1000px);
@@ -57,7 +61,6 @@ li:hover {
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
 }
-
 footer {
   text-align: center;
   background-color: black;
