@@ -40,10 +40,21 @@ li:hover {
   color: #5c80a3;
 }
 #content {
-  width: min(75vw, 1000px);
+  display: flex;
+  flex-direction: column;
+  width: min(75vw, 500px);
   padding: 30px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(211,211,211, 0.7);
   border-radius: 10px;
+  margin: 50px auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form > div {
+  display: flex;
+  flex-direction: column;
 }
 footer {
   text-align: center;
