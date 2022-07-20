@@ -42,7 +42,7 @@ li:hover {
 #content {
   display: flex;
   flex-direction: column;
-  width: min(75vw, 500px);
+  width: min(75vw, 400px);
   padding: 30px;
   background-color: rgba(211,211,211, 0.7);
   border-radius: 10px;
@@ -56,6 +56,9 @@ form > div {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+}
+form > h1 {
+  color: #720800;
 }
 footer {
   text-align: center;
