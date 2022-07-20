@@ -36,13 +36,13 @@ const headerTexts = (function () {
 })();
 
 const content = document.querySelector("#content");
+const contactUs = document.createElement("div");
+content.appendChild(contactUs);
 const form = document.createElement("form");
 form.setAttribute("action", "#");
 form.setAttribute("method", "get");
 form.setAttribute("accept-charset", "utf-8");
 content.appendChild(form);
-const contactUs = document.createElement("div");
-content.appendChild(contactUs);
 
 const formHeader = document.createElement("h1");
 formHeader.textContent = "Feedback";

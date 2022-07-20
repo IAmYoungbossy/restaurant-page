@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background: url('./image.jpg') no-repeat center fixed;
+  background: url("./image.jpg") no-repeat center fixed;
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -41,12 +41,18 @@ li:hover {
 }
 #content {
   display: flex;
-  flex-direction: column;
-  width: min(75vw, 400px);
+  /* width: min(75vw, 400px); */
   padding: 30px;
-  background-color: rgba(211,211,211, 0.7);
+  background-color: rgba(211, 211, 211, 0.7);
   border-radius: 10px;
   margin: 50px auto;
+  gap: 20px;
+}
+#content > div {
+  width: 300px;
+  height: 455px;
+  background-color: rgba(114, 8, 0, 0.9);
+  border-radius: 10px;
 }
 form {
   display: flex;
@@ -59,6 +65,13 @@ form > div {
 }
 form > h1 {
   color: #720800;
+}
+button {
+  background-color: rgba(114, 8, 0, 0.9);
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
 }
 footer {
   text-align: center;
