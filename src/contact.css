@@ -41,7 +41,6 @@ li:hover {
 }
 #content {
   display: flex;
-  /* width: min(75vw, 400px); */
   padding: 30px;
   background-color: rgba(211, 211, 211, 0.7);
   border-radius: 10px;
@@ -61,7 +60,7 @@ form {
 form > div {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 form > h1 {
   color: #720800;
@@ -79,37 +78,31 @@ footer {
   color: white;
   font-weight: bold;
   padding: 20px;
+  margin-top: auto;
 }
-input[pattern]:not(:placeholder-shown):not(:focus):invalid + span::before {
-  content: "❌";
-  color: red;
+input, textarea, select {
+  outline: none;
+  border: 1px solid grey;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(202,202,202, 0.1);
 }
-input[pattern]:not(:placeholder-shown):invalid {
+input:hover, textarea:hover, select:hover {
+  background-color: rgba(146,66,48, 0.1);
+}
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border: 1px solid #b96a1f;
+  box-shadow: 0 0 1px black;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+input:invalid:not(:placeholder-shown), textarea:invalid:not(:placeholder-shown) {
   border: 1px solid red;
-  box-shadow: 1px 2px 2px rgb(238, 174, 174);
 }
-input[pattern]:not(:placeholder-shown):valid + span::before {
-  content: "✔️";
-  color: green;
-}
-input[pattern]:not(:placeholder-shown):valid {
+input:valid:not(:placeholder-shown), textarea:valid:not(:placeholder-shown) {
   border: 1px solid green;
 }
-input:focus {
-  outline: none;
-  border: 1px solid blue;
-  border-radius: 5px;
-  box-shadow: 2px 2px 2px rgb(188, 188, 223);
-}
-input[pattern]:invalid:focus:not(:placeholder-shown) {
-  border: 1px solid red;
-  border-radius: 5px;
-}
-input[pattern]:hover,
-input:focus {
-  background-color: #eee;
-}
-form>p:last-of-type>span {
-  color: green;
-  cursor: pointer;
+textarea {
+  resize: none;
+  height: 60px;
 }
