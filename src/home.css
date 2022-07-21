@@ -13,7 +13,7 @@ body {
   --header-height: min-content;
   font-family: sans-serif;
 }
-body > div {
+.home-class {
   width: 100%;
 }
 header {
@@ -26,12 +26,12 @@ header {
   background-color: #d3d3d3;
   border-bottom: 5px solid black;
 }
-#content > div:first-child {
+.home-class > div:first-child {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#content>div>div {
+.home-class>div>div {
   padding: 25px 20px;
   background-color: rgba(226,14,0, 0.4);
   border: none;
@@ -43,7 +43,7 @@ header {
   font-weight: bold;
   cursor: pointer;
 }
-#content>div>div:hover{
+.home-class>div>div:hover{
   background-color: rgb(226,14,0);
   transform: scale(1.01);
   transition: cubic-bezier(0.165, 0.84, 0.44, 1);

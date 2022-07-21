@@ -24,7 +24,7 @@ body {
 .menu-name {
   text-decoration: underline;
 }
-#content {
+.menu-class {
   width: min(75vw, 1000px);
   padding: 30px;
   display: grid;

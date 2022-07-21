@@ -12,7 +12,7 @@ body {
   --header-height: min-content;
   font-family: sans-serif;
 }
-#content {
+.contact-class {
   display: flex;
   padding: 30px;
   background-color: rgba(211, 211, 211, 0.7);
@@ -20,7 +20,7 @@ body {
   margin: 50px auto;
   gap: 20px;
 }
-#content > div {
+.contact-class > div {
   width: 300px;
   height: 455px;
   background-color: rgba(114, 8, 0, 0.9);

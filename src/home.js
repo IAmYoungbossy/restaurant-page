@@ -6,6 +6,7 @@ function home() {
     const buttonContainer = document.createElement("div");
     const orderButton = document.createElement("div");
     const contactUsButton = document.createElement("div");
+    createDomElements.content.classList.add("home-class");
     createDomElements.content.appendChild(buttonContainer);
     buttonContainer.appendChild(orderButton);
     buttonContainer.appendChild(contactUsButton);

@@ -6,6 +6,7 @@ createDomElements;
 function formWrap() {
   //Form container
   const content = document.querySelector("#content");
+  content.classList.add("contact-class");
   const contactUs = document.createElement("div");
   content.appendChild(contactUs);
   const form = document.createElement("form");

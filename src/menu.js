@@ -12,6 +12,7 @@ const menuTab = function () {
     menuName.classList.add("menu-name");
     menuDescription.classList.add("menu-description");
     createDomElements.content.appendChild(menuCard);
+    createDomElements.content.classList.add("menu-class");
   }
 
   const menuList = (function () {
