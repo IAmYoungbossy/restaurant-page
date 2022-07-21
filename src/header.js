@@ -9,8 +9,11 @@ const createDomElements = (function () {
   const logo = document.createElement("h1");
   const menu = document.createElement("ul");
   const menuHome = document.createElement("li");
+  menuHome.classList.add('homeLi');
   const menuMenu = document.createElement("li");
+  menuMenu.classList.add('menuLi');
   const menuContact = document.createElement("li");
+  menuContact.classList.add('contactLi');
 
   body.insertBefore(header, content);
   header.appendChild(logoContainer);
