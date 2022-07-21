@@ -4,6 +4,8 @@ import {createDomElements} from "./header";
 createDomElements;
 
 function formWrap() {
+  const contactFooter = document.querySelector('footer');
+  contactFooter.classList.add('contactFooter');
   //Form container
   const content = document.querySelector("#content");
   content.classList.add("contact-class");

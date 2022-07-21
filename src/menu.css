@@ -34,7 +34,7 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
 }
-footer {
+.menuFooter {
   text-align: center;
   background-color: black;
   color: white;

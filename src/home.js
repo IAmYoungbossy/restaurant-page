@@ -3,6 +3,8 @@ import {createDomElements} from "./header";
 
 function home() {
   const createHomeCenterBtn = (function () {
+    const homeFooter = document.querySelector('footer');
+    homeFooter.classList.add('homeFooter');
     const buttonContainer = document.createElement("div");
     const orderButton = document.createElement("div");
     const contactUsButton = document.createElement("div");

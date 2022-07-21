@@ -2,6 +2,8 @@ import "./menu.css";
 import { createDomElements } from "./header";
 
 const menuTab = function () {
+  const menuFooter = document.querySelector('footer');
+  menuFooter.classList.add('menuFooter');
   for (let i = 0; i < 6; i++) {
     const menuCard = document.createElement("div");
     const menuName = document.createElement("h2");

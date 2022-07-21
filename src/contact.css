@@ -45,7 +45,7 @@ button {
   border: none;
   border-radius: 10px;
 }
-footer {
+.contactFooter {
   text-align: center;
   background-color: black;
   color: white;
