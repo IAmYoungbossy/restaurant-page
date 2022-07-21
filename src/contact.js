@@ -1,13 +1,11 @@
 import "./contact.css";
-import {createDomElements} from "./header";
-
-createDomElements;
 
 function formWrap() {
-  const contactFooter = document.querySelector('footer');
-  contactFooter.classList.add('contactFooter');
+  const contactFooter = document.querySelector("footer");
+  contactFooter.classList.add("contactFooter");
   //Form container
   const content = document.querySelector("#content");
+  content.removeAttribute("class");
   content.classList.add("contact-class");
   const contactUs = document.createElement("div");
   content.appendChild(contactUs);
@@ -151,4 +149,4 @@ function formWrap() {
   form.appendChild(submitButtonDiv);
 }
 
-export {formWrap};
+export { formWrap };

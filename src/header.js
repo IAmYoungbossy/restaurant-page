@@ -1,6 +1,6 @@
 import "./header.css";
 
-const createDomElements = (function () {
+const createDomElements = function () {
   const content = document.querySelector("#content");
   const body = content.parentNode;
   const header = document.createElement("header");
@@ -35,6 +35,6 @@ const createDomElements = (function () {
     menuContact,
     content,
   };
-})();
+};
 
 export { createDomElements };

@@ -1,9 +1,9 @@
 import "./menu.css";
-import { createDomElements } from "./header";
 
 const menuTab = function () {
-  const menuFooter = document.querySelector('footer');
-  menuFooter.classList.add('menuFooter');
+  const content = document.querySelector("#content");
+  const menuFooter = document.querySelector("footer");
+  menuFooter.classList.add("menuFooter");
   for (let i = 0; i < 6; i++) {
     const menuCard = document.createElement("div");
     const menuName = document.createElement("h2");
@@ -13,8 +13,9 @@ const menuTab = function () {
     menuCard.classList.add("menu-items");
     menuName.classList.add("menu-name");
     menuDescription.classList.add("menu-description");
-    createDomElements.content.appendChild(menuCard);
-    createDomElements.content.classList.add("menu-class");
+    content.appendChild(menuCard);
+    content.removeAttribute("class");
+    content.classList.add("menu-class");
   }
 
   const menuList = (function () {
@@ -41,4 +42,4 @@ const menuTab = function () {
   })();
 };
 
-export {menuTab};
+export { menuTab };
