@@ -11,8 +11,8 @@ const listenForEvents = (function () {
   const homeBtn = document.querySelector(".homeLi");
   const menuBtn = document.querySelector(".menuLi");
   const contactBtn = document.querySelector(".contactLi");
-  const orderFood = document.querySelector(".food");
-  const contactUs = document.querySelector(".us");
+  const orderFood = document.querySelector(".order-food");
+  const contactUs = document.querySelector(".contact-us");
 
   homeBtn.addEventListener("click", () => {
     while (content.firstChild) {
