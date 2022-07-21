@@ -10,6 +10,26 @@ function creatContactForm() {
   //Form container
   content.classList.add("contact-class");
   const contactUs = document.createElement("div");
+  contactUs.classList.add("contact-box");
+  const contactUsHeader = document.createElement("h2");
+  const contactAddress = document.createElement("p");
+  const contactAddress2 = document.createElement("p");
+  const contactLineRule = document.createElement("hr");
+  const contactTelephone = document.createElement("p");
+  const contactLineRule2 = document.createElement("hr");
+  const contactEmaail = document.createElement("p");
+  contactUs.appendChild(contactUsHeader);
+  contactUs.appendChild(contactAddress);
+  contactUs.appendChild(contactAddress2);
+  contactUs.appendChild(contactLineRule);
+  contactUs.appendChild(contactTelephone);
+  contactUs.appendChild(contactLineRule2);
+  contactUs.appendChild(contactEmaail);
+  contactUsHeader.textContent = "Contact Us!";
+  contactAddress.textContent = "You can reach out to us in the following address if you stay close by.";
+  contactAddress2.textContent = "No. 10 Noble Drive Off Ada George Road Port Harcourt.";
+  contactTelephone.textContent = "You can reach out to us on weekdays, our telephone is +234885736485";
+  contactEmaail.textContent = "You can also reach out to us via our Email address: example@testing.go";
   content.appendChild(contactUs);
   const form = document.createElement("form");
   form.setAttribute("action", "#");
