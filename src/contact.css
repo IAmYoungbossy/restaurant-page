@@ -26,6 +26,9 @@ body {
   background-color: rgba(114, 8, 0, 0.9);
   border-radius: 10px;
 }
+::placeholder {
+  color: #703600;
+}
 form {
   display: flex;
   flex-direction: column;

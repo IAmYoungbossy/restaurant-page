@@ -9,7 +9,9 @@ function home() {
     homeFooter.classList.add("homeFooter");
     const buttonContainer = document.createElement("div");
     const orderButton = document.createElement("div");
+    orderButton.classList.add("food");
     const contactUsButton = document.createElement("div");
+    contactUsButton.classList.add("us");
     content.classList.add("home-class");
     content.appendChild(buttonContainer);
     buttonContainer.appendChild(orderButton);
