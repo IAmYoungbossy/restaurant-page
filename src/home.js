@@ -5,6 +5,7 @@ function home() {
     const content = document.querySelector("#content");
     content.removeAttribute("class");
     const homeFooter = document.querySelector("footer");
+    homeFooter.removeAttribute("class");
     homeFooter.classList.add("homeFooter");
     const buttonContainer = document.createElement("div");
     const orderButton = document.createElement("div");

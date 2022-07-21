@@ -1,11 +1,13 @@
 import "./contact.css";
 
-function formWrap() {
-  const contactFooter = document.querySelector("footer");
-  contactFooter.classList.add("contactFooter");
-  //Form container
+function creatContactForm() {
   const content = document.querySelector("#content");
   content.removeAttribute("class");
+  const contactFooter = document.querySelector("footer");
+  contactFooter.removeAttribute("class");
+  contactFooter.classList.add("contactFooter");
+
+  //Form container
   content.classList.add("contact-class");
   const contactUs = document.createElement("div");
   content.appendChild(contactUs);
@@ -149,4 +151,4 @@ function formWrap() {
   form.appendChild(submitButtonDiv);
 }
 
-export { formWrap };
+export { creatContactForm };

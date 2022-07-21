@@ -1,6 +1,6 @@
 import "./header.css";
 
-const createDomElements = function () {
+const createHeader = function () {
   const content = document.querySelector("#content");
   const body = content.parentNode;
   const header = document.createElement("header");
@@ -28,13 +28,6 @@ const createDomElements = function () {
   menuHome.textContent = "Home";
   menuMenu.textContent = "Menu";
   menuContact.textContent = "Contact";
-  return {
-    logo,
-    menuHome,
-    menuMenu,
-    menuContact,
-    content,
-  };
 };
 
-export { createDomElements };
+export { createHeader };

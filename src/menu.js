@@ -2,8 +2,11 @@ import "./menu.css";
 
 const menuTab = function () {
   const content = document.querySelector("#content");
+  content.removeAttribute("class");
   const menuFooter = document.querySelector("footer");
+  menuFooter.removeAttribute("class");
   menuFooter.classList.add("menuFooter");
+  
   for (let i = 0; i < 6; i++) {
     const menuCard = document.createElement("div");
     const menuName = document.createElement("h2");
@@ -14,7 +17,6 @@ const menuTab = function () {
     menuName.classList.add("menu-name");
     menuDescription.classList.add("menu-description");
     content.appendChild(menuCard);
-    content.removeAttribute("class");
     content.classList.add("menu-class");
   }
 
