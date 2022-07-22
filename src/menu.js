@@ -1,4 +1,5 @@
 import "./menu.css";
+import Menu from "./menu.png";
 
 const menuTab = function () {
   const content = document.querySelector("#content");
@@ -11,8 +12,11 @@ const menuTab = function () {
     const menuCard = document.createElement("div");
     const menuName = document.createElement("h2");
     const menuDescription = document.createElement("p");
+    const myMenu = new Image();
+    myMenu.src = Menu;
     menuCard.appendChild(menuName);
     menuCard.appendChild(menuDescription);
+    menuCard.appendChild(myMenu);
     menuCard.classList.add("menu-items");
     menuName.classList.add("menu-name");
     menuDescription.classList.add("menu-description");
