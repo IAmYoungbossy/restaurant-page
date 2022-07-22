@@ -14,7 +14,7 @@ body {
 }
 .menu-items {
   height: 200px;
-  padding: 20px;
+  padding: 10px;
   border-radius: 20px;
   text-align: center;
   border: 5px solid #e20e00;
@@ -33,6 +33,13 @@ body {
   margin: 50px auto;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
+}
+.menu-items > img {
+  width: 250px;
+  height: 100px;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 3px solid black;
 }
 .menuFooter {
   text-align: center;
