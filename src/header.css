@@ -29,10 +29,11 @@ header > div:first-child {
 }
 ul {
   display: flex;
-  gap: 40px;
+  margin-left: 40px;
   flex-wrap: wrap;
 }
 li {
+  margin-left: 40px;
   list-style: none;
   font-size: 1.5rem;
   color: #5c5555;
