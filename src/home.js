@@ -1,4 +1,6 @@
 import "./home.css";
+import { menuTab } from "./menu";
+import { creatContactForm } from "./contact";
 
 function home() {
   const content = document.querySelector("#content");
@@ -16,10 +18,22 @@ function home() {
 
   orderButton.textContent = "Order Food";
   contactUsButton.textContent = "Contact Us!";
-  contactUsButton.removeAttribute("class");
-  orderButton.removeAttribute("class");
   orderButton.classList.add("order-food");
   contactUsButton.classList.add("contact-us");
+
+  orderButton.addEventListener("click", () => {
+    while (content.firstChild) {
+      content.removeChild(content.firstChild);
+    }
+    menuTab();
+  });
+
+  contactUsButton.addEventListener("click", () => {
+    while (content.firstChild) {
+      content.removeChild(content.firstChild);
+    }
+    creatContactForm();
+  });
 }
 
 export { home };

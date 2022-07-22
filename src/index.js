@@ -11,8 +11,6 @@ const listenForEvents = (function () {
   const homeBtn = document.querySelector(".homeLi");
   const menuBtn = document.querySelector(".menuLi");
   const contactBtn = document.querySelector(".contactLi");
-  const orderFood = document.querySelector(".order-food");
-  const contactUs = document.querySelector(".contact-us");
 
   homeBtn.addEventListener("click", () => {
     while (content.firstChild) {
@@ -27,22 +25,8 @@ const listenForEvents = (function () {
     }
     menuTab();
   });
-
-  orderFood.addEventListener("click", () => {
-    while (content.firstChild) {
-      content.removeChild(content.firstChild);
-    }
-    menuTab();
-  });
-
+  
   contactBtn.addEventListener("click", () => {
-    while (content.firstChild) {
-      content.removeChild(content.firstChild);
-    }
-    creatContactForm();
-  });
-
-  contactUs.addEventListener("click", () => {
     while (content.firstChild) {
       content.removeChild(content.firstChild);
     }
