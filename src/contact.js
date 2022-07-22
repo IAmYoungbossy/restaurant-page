@@ -101,7 +101,7 @@ function creatContactForm() {
   inputEmail.setAttribute("placeholder", "bobbyray@example.com");
   inputEmail.setAttribute(
     "pattern",
-    "^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$"
+    "^[\\w]{1,}[\\w.+-]{0,}@[\\w-]{2,}([.][a-zA-Z]{2,}|[.][\\w-]{2,}[.][a-zA-Z]{2,})$"
   );
   inputEmail.setAttribute("required", "");
   const spanEmail = document.createElement("span");
@@ -120,7 +120,7 @@ function creatContactForm() {
   inputPhoneNumber.setAttribute("name", "phone");
   inputPhoneNumber.setAttribute("type", "tel");
   inputPhoneNumber.setAttribute("placeholder", "+2347234567245");
-  inputPhoneNumber.setAttribute("pattern", "[\+]\d{3}\d{3}\d{7}|0\d{10}");
+  inputPhoneNumber.setAttribute("pattern", "[\\+]\\d{3}\\d{3}\\d{7}|0\\d{10}");
   const spanPhone = document.createElement("span");
   phoneNumberDiv.appendChild(phoneNumberLabel);
   phoneNumberDiv.appendChild(inputPhoneNumber);
