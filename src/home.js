@@ -16,11 +16,12 @@ function home() {
   buttonContainer.appendChild(orderButton);
   buttonContainer.appendChild(contactUsButton);
 
+  // For center buttons on homepage
   orderButton.textContent = "Order Food";
   contactUsButton.textContent = "Contact Us!";
   orderButton.classList.add("order-food");
   contactUsButton.classList.add("contact-us");
-
+  
   orderButton.addEventListener("click", () => {
     while (content.firstChild) {
       content.removeChild(content.firstChild);
