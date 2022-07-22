@@ -7,7 +7,7 @@ const menuTab = function () {
   const menuFooter = document.querySelector("footer");
   menuFooter.removeAttribute("class");
   menuFooter.classList.add("menuFooter");
-  
+
   for (let i = 0; i < 6; i++) {
     const menuCard = document.createElement("div");
     const menuName = document.createElement("h2");
@@ -47,5 +47,4 @@ const menuTab = function () {
       "I can not believe this is not meat! Same Taste different meat!";
   })();
 };
-
 export { menuTab };

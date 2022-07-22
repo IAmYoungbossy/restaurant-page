@@ -25,12 +25,18 @@ function creatContactForm() {
   contactUs.appendChild(contactTelephone);
   contactUs.appendChild(contactLineRule2);
   contactUs.appendChild(contactEmaail);
+
   contactUsHeader.textContent = "Contact Us!";
-  contactAddress.textContent = "You can reach out to us in the following address if you stay close by.";
-  contactAddress2.textContent = "No. 10 Noble Drive Off Ada George Road Port Harcourt.";
-  contactTelephone.textContent = "You can reach out to us on weekdays, our telephone is +234885736485";
-  contactEmaail.textContent = "You can also reach out to us via our Email address: example@testing.go";
+  contactAddress.textContent =
+    "You can reach out to us in the following address if you stay close by.";
+  contactAddress2.textContent =
+    "No. 10 Noble Drive Off Ada George Road Port Harcourt.";
+  contactTelephone.textContent =
+    "You can reach out to us on weekdays, our telephone is +234885736485";
+  contactEmaail.textContent =
+    "You can also reach out to us via our Email address: example@testing.go";
   content.appendChild(contactUs);
+
   const form = document.createElement("form");
   form.setAttribute("action", "#");
   form.setAttribute("method", "get");
@@ -93,10 +99,9 @@ function creatContactForm() {
   inputEmail.setAttribute("name", "email");
   inputEmail.setAttribute("type", "email");
   inputEmail.setAttribute("placeholder", "bobbyray@example.com");
-  inputEmail.setAttribute("minlength", "36");
   inputEmail.setAttribute(
     "pattern",
-    "^[w]{1,}[w.+-]{0,}@[w-]{2,}([.][a-zA-Z]{2,}|[.][w-]{2,}[.][a-zA-Z]{2,})$"
+    "^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$"
   );
   inputEmail.setAttribute("required", "");
   const spanEmail = document.createElement("span");
@@ -115,7 +120,7 @@ function creatContactForm() {
   inputPhoneNumber.setAttribute("name", "phone");
   inputPhoneNumber.setAttribute("type", "tel");
   inputPhoneNumber.setAttribute("placeholder", "+2347234567245");
-  inputPhoneNumber.setAttribute("pattern", "[+]d{3}d{3}d{7}|0d{10}");
+  inputPhoneNumber.setAttribute("pattern", "[\+]\d{3}\d{3}\d{7}|0\d{10}");
   const spanPhone = document.createElement("span");
   phoneNumberDiv.appendChild(phoneNumberLabel);
   phoneNumberDiv.appendChild(inputPhoneNumber);
