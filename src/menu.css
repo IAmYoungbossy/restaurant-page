@@ -35,7 +35,7 @@ body {
   border-radius: 10px;
 }
 .menu-items > img {
-  width: 250px;
+  width: min(60%, 250px);
   height: 110px;
   margin-top: 10px;
   border-radius: 10px;
