@@ -29,6 +29,7 @@ header > div:first-child {
 }
 ul {
   display: flex;
+  justify-content: end;
   margin-left: 40px;
   flex-wrap: wrap;
 }
