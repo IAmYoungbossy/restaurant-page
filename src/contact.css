@@ -13,15 +13,17 @@ body {
   font-family: sans-serif;
 }
 .contact-class {
-  display: flex;
+  display: grid;
   padding: 30px;
+  width: min(75vw, 750px);
+  grid-template-columns: repeat(auto-fill, minmax(min(60vw, 320px), 1fr));
   background-color: rgba(211, 211, 211, 0.7);
   border-radius: 10px;
   margin: 50px auto;
   gap: 20px;
 }
 .contact-class > div {
-  width: 300px;
+  /* width: 300px; */
   height: 455px;
   background-color: rgba(114, 8, 0, 0.9);
   border-radius: 10px;
